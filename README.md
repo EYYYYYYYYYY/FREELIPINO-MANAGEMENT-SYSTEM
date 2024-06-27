@@ -1,4 +1,4 @@
-# FREELIPINO MANAGEMENT SYSTEM
+# FREELIPINO CONTRACT MANAGEMENT SYSTEM(CMS)
  
 Based on the system of SaLaaR HuSyN Contract Management System
 ![Logo](https://github.com/EYYYYYYYYYY/FREELIPINO-MANAGEMENT-SYSTEM/assets/93482660/f6526ce3-1b25-49ab-a92a-48ad86cb3fec)
