@@ -34,7 +34,7 @@ namespace WaterAndPower.Forms
         {
             lblTitle.Text = WorkTitle;
             lblName.Text = ContractorName;
-            string workToBeDone = ds.getSingleValueSingleColum("select WorkToBeDone from tblCalculations where WorkAssignId = '" + WorkAssgnId + "'", out workToBeDone, 0);
+            string workToBeDone = ds.getSingleValueSingleColumn("select WorkToBeDone from tblCalculations where WorkAssignId = '" + WorkAssgnId + "'", out workToBeDone, 0);
             lblToBeDone.Text = workToBeDone;
         }
 
@@ -50,12 +50,12 @@ namespace WaterAndPower.Forms
             }
             else
             {
-                string WorkDone = ds.getSingleValueSingleColum("select WorkDone from tblCalculations where WorkAssignId = '"+WorkAssgnId+"'", out WorkDone,0);
+                string WorkDone = ds.getSingleValueSingleColumn("select WorkDone from tblCalculations where WorkAssignId = '"+WorkAssgnId+"'", out WorkDone,0);
                 double newWorkDone = double.Parse(txtWorkDone.Text) + double.Parse(WorkDone);
 
                 double balance = double.Parse(CACost) - newWorkDone;
 
-                string tobePaid = ds.getSingleValueSingleColum("select NowToBePaid from tblCalculations where WorkAssignId = '" + WorkAssgnId + "'", out WorkDone, 0);
+                string tobePaid = ds.getSingleValueSingleColumn("select NowToBePaid from tblCalculations where WorkAssignId = '" + WorkAssgnId + "'", out WorkDone, 0);
                 double newtoBePaid = double.Parse(txtWorkDone.Text) + double.Parse(tobePaid);
 
                 double WorkToBeDone = double.Parse(lblToBeDone.Text) - double.Parse(txtWorkDone.Text);

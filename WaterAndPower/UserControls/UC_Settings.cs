@@ -24,8 +24,8 @@ namespace WaterAndPower.UserControls
         {
             ds.fillgridView("select * from tblHeadOfAccounts",dataGridView1);
             ds.fillgridView("select * from tblDesignation",dataGridView3);
-            ds.fillcombobox("select title from tblDesignation",cmbDesignation);
-            ds.fillcombobox("select description from tblRoles",cmbRole);
+            ds.fillComboBox("select title from tblDesignation",cmbDesignation);
+            ds.fillComboBox("select description from tblRoles",cmbRole);
             ds.fillgridView("select id,FullName,FathersName,CellNo,UserName from tblUsers",dataGridView2);
         }
 
@@ -90,8 +90,8 @@ namespace WaterAndPower.UserControls
         {
             if (isFormValid())
             {
-                desId = ds.getSingleValueSingleColum("select id from tblDesignations where name = '" + cmbDesignation.Text + "'", out desId, 0);
-                RoleId = ds.getSingleValueSingleColum("select id from tblRoles where description = '" + cmbRole.Text + "'", out RoleId, 0);
+                desId = ds.getSingleValueSingleColumn("select id from tblDesignations where name = '" + cmbDesignation.Text + "'", out desId, 0);
+                RoleId = ds.getSingleValueSingleColumn("select id from tblRoles where description = '" + cmbRole.Text + "'", out RoleId, 0);
 
                 ds.InsertUpdateDeleteCreate("insert into tblUsers(FullName,FathersName,CNIC,CellNo,UserName,Password,address,DesignationId,RoleId) VALUES ('" + txtFullName.Text + "','" + txtFatherName.Text + "','" + txtCNIC.Text + "','" + txtCellNo.Text + "','" + txtUserName.Text + "','" + txtPassword.Text + "','" + txtAddress.Text + "','" + desId + "','" + RoleId + "')");
                 MessageBox.Show("User Added Successfully... :) :)", "User Added", MessageBoxButtons.OK, MessageBoxIcon.Information);

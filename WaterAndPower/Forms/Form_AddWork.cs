@@ -32,7 +32,7 @@ namespace WaterAndPower.Forms
                 DialogResult dialog = MessageBox.Show("Are You Sure Want to add this Work?","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
                 if (dialog == DialogResult.Yes)
                 {
-                    string hoaId = ds.getSingleValueSingleColum("Select id from tblHeadOfAccounts where AccountNo = '"+cmbHOA.Text+"'",out hoaId,0);
+                    string hoaId = ds.getSingleValueSingleColumn("Select id from tblHeadOfAccounts where AccountNo = '"+cmbHOA.Text+"'",out hoaId,0);
                     ds.InsertUpdateDeleteCreate("insert into tblWorks(title,TSNo,TSAmount,MBNo,PageNo,HOAId) VALUES('"+txtTitle.Text+"','"+txtTsNo.Text+ "','" + txtTsAmount.Text + "','" + txtMBNo.Text + "','" + txtPageNo.Text + "','" + hoaId + "')");
                     MessageBox.Show("Work Added Successfully..!!","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     this.Dispose();
@@ -55,7 +55,7 @@ namespace WaterAndPower.Forms
 
         private void Form_AddWork_Load(object sender, EventArgs e)
         {
-            ds.fillcombobox("select AccountNo from tblHeadOfAccounts", cmbHOA);
+            ds.fillComboBox("select AccountNo from tblHeadOfAccounts", cmbHOA);
         }
     }
 }

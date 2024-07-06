@@ -45,16 +45,26 @@ namespace WaterAndPower.Forms
         }
         private bool isLoginDetailsCorrect()
         {
-            string RoleId = ds.getSingleValueSingleColum("select RoleId from tblUsers where userName = '" + txtUserName.Text + "' and password = '" + txtPassword.Text + "'", out RoleId, 0);
-            if (RoleId == null)
+            if(ds.connect()==true)
             {
-                MessageBox.Show("UserName or Password is Incorrect.", "Incorrect Login Details", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+                string userID = ds.getSingleValueSingleColumn("select user_id from user_account where user_email = '" + txtUserName.Text + "' and user_password = '" + txtPassword.Text + "'", out userID, 0);
+                if (userID == null)
+                {
+                    MessageBox.Show("UserName or Password is Incorrect.", "Incorrect Login Details", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
             else
             {
-                return true;
+                MessageBox.Show("Not Connected");
+                return false;
             }
+
+
         }
         private void BtnLogin_Click(object sender, EventArgs e)
         {

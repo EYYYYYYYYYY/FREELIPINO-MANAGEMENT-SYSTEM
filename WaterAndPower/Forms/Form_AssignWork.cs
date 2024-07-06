@@ -32,22 +32,22 @@ namespace WaterAndPower.Forms
         {
             lblWorkTitle.Text = workTitle;
             lblTSAmt.Text = TsAmt;
-            ds.fillcombobox("select name from tblContractors", cmbContractor);
+            ds.fillComboBox("select name from tblContractors", cmbContractor);
             cmbYear.SelectedIndex = 0;
         }
 
         private void CmbContractor_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string address = ds.getSingleValueSingleColum("select address from tblContractors where name = '"+cmbContractor.Text+"'",out address,0);
+            string address = ds.getSingleValueSingleColumn("select address from tblContractors where name = '"+cmbContractor.Text+"'",out address,0);
             lblContactorAddress.Text = address;
         }
         string ContractorId;
         private void CmbContractor_Leave(object sender, EventArgs e)
         {
-            string address = ds.getSingleValueSingleColum("select address from tblContractors where name = '" + cmbContractor.Text + "'", out address, 0);
+            string address = ds.getSingleValueSingleColumn("select address from tblContractors where name = '" + cmbContractor.Text + "'", out address, 0);
             lblContactorAddress.Text = address;
 
-            ContractorId = ds.getSingleValueSingleColum("select id from tblContractors where name = '" + cmbContractor.Text + "' and address = '"+lblContactorAddress.Text+"'", out ContractorId, 0);
+            ContractorId = ds.getSingleValueSingleColumn("select id from tblContractors where name = '" + cmbContractor.Text + "' and address = '"+lblContactorAddress.Text+"'", out ContractorId, 0);
             if (ContractorId == null)
             {
                MessageBox.Show("Contractor Not Found.. Please Add Contractor First.. ","Contractor Not Found",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -63,7 +63,7 @@ namespace WaterAndPower.Forms
                 {
                     ds.InsertUpdateDeleteCreate("insert into tblWorkAssigned(WorkId,ContractorId,CACost,AssignDate,Period,AssignedBy) VALUES('" + workId + "','" + ContractorId + "','" + txtCACost.Text + "','" + txtDate.Text + "','" + cmbYear.Text + "',1)");
                
-                    string workAssignId = ds.getSingleValueSingleColum("select max(id) from tblWorkAssigned", out workAssignId, 0);
+                    string workAssignId = ds.getSingleValueSingleColumn("select max(id) from tblWorkAssigned", out workAssignId, 0);
 
                     ds.InsertUpdateDeleteCreate("insert into tblCalculations(WorkAssignId,WorkDone,NowToBePaid,WorkToBeDone,AmountPaid,BalanceAmount,UserId) VALUES('" + workAssignId + "',0,0,'" + txtCACost.Text + "',0,'" + txtCACost.Text + "',1)");
                     ds.InsertUpdateDeleteCreate("update tblWorks set isAssigned = 1 where id = '"+workId+"'");

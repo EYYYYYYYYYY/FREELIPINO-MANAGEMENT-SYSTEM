@@ -149,7 +149,7 @@ namespace WaterAndPower.Forms
         private void Form_Dashboard_Load(object sender, EventArgs e)
         {
             lblUserName.Text = Helper.UserData[1];
-            string RoleName = ds.getSingleValueSingleColum("select Description from tblRoles where id = '" + Helper.UserData[2] + "'", out RoleName, 0);
+            string RoleName = ds.getSingleValueSingleColumn("select Description from tblRoles where id = '" + Helper.UserData[2] + "'", out RoleName, 0);
             lblRole.Text = RoleName;
         }
 

@@ -1,33 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Pharmonics19.DbFiles
 {
     class DataAccess
     {
-        static string _ConnectionString = @"Data Source=DESKTOP-D65NCRR\SQLEXPRESS;Initial Catalog=ContractDb;Integrated Security=True";
-        SqlCommand cmd_;
-        SqlConnection conn_;
-        SqlDataAdapter adptr_;
-        SqlDataReader reader_;
+        static string _ConnectionString = "server=localhost;port=3306;uid=root;pwd=[password];database=freelipino";
+        MySqlCommand cmd_;
+        MySqlConnection conn_;
+        MySqlDataAdapter adptr_;
+        MySqlDataReader reader_;
         DataTable dtable_;
 
         public string getmessage { get; set; }
 
         public DataAccess()
         {
-            conn_ = new SqlConnection(_ConnectionString);
-            cmd_ = new SqlCommand();
+            conn_ = new MySqlConnection(_ConnectionString);
+            cmd_ = new MySqlCommand();
             dtable_ = new DataTable();
-            adptr_ = new SqlDataAdapter();
-
-
+            adptr_ = new MySqlDataAdapter();
         }
 
         public bool connect()
@@ -35,17 +33,16 @@ namespace Pharmonics19.DbFiles
             try
             {
                 conn_.Open();
-                getmessage = "successfully connected";
+                getmessage = "Successfully connected";
                 return true;
-
             }
             catch (Exception ex)
             {
-                getmessage = "connection error" + ex.Message;
+                getmessage = "Connection error: " + ex.Message;
                 return false;
             }
-
         }
+
         public bool disconnect()
         {
             try
@@ -53,14 +50,13 @@ namespace Pharmonics19.DbFiles
                 conn_.Close();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-
                 return false;
             }
         }
 
-        public string getSingleValueSingleColum(string query, out string columnData, int index)
+        public string getSingleValueSingleColumn(string query, out string columnData, int index)
         {
             string ret = null;
             try
@@ -73,13 +69,11 @@ namespace Pharmonics19.DbFiles
                 {
                     ret = reader_[index].ToString();
                 }
-                //ret = "successfull";
-                getmessage = "successfull get value";
+                getmessage = "Successfully retrieved value";
             }
             catch (Exception e)
             {
-
-                getmessage = "error" + e.Message;
+                getmessage = "Error: " + e.Message;
             }
             finally
             {
@@ -89,81 +83,78 @@ namespace Pharmonics19.DbFiles
             return ret;
         }
 
-        public string custominsertupdateDelete(SqlCommand cmd2parameterizednoconnectionNeeded)
+        public string customInsertUpdateDelete(MySqlCommand cmd2parameterizednoconnectionNeeded)
         {
             string ret = "";
-            string allqueries = cmd2parameterizednoconnectionNeeded.CommandText.ToLower();
+            string allQueries = cmd2parameterizednoconnectionNeeded.CommandText.ToLower();
             try
             {
                 cmd2parameterizednoconnectionNeeded.Connection = conn_;
                 connect();
-
                 cmd2parameterizednoconnectionNeeded.ExecuteNonQuery();
-                if (allqueries.Contains("insert into "))
+                if (allQueries.Contains("insert into "))
                 {
-                    ret = getmessage = "inserted Successfully!";
+                    ret = getmessage = "Inserted Successfully!";
                 }
-                else if (allqueries.Contains("delete from "))
+                else if (allQueries.Contains("delete from "))
                 {
                     ret = getmessage = "Deleted Successfully!";
                 }
-                else if (allqueries.Contains("create table "))
+                else if (allQueries.Contains("create table "))
                 {
                     ret = getmessage = "Table Created Successfully!";
                 }
-                else if (allqueries.Contains("update  ") && allqueries.Contains("set="))
+                else if (allQueries.Contains("update ") && allQueries.Contains("set="))
                 {
                     ret = getmessage = "Updated Successfully";
                 }
-
-
             }
             catch (Exception exp)
             {
-
-                ret = getmessage = "Failed to execute " + cmd2parameterizednoconnectionNeeded.CommandText + " \n Reason : " + exp.Message;
+                ret = getmessage = "Failed to execute " + cmd2parameterizednoconnectionNeeded.CommandText + "\nReason: " + exp.Message;
             }
-            finally { disconnect(); }
+            finally
+            {
+                disconnect();
+            }
             return ret;
         }
-
 
         public string InsertUpdateDeleteCreate(string query)
         {
             string ret = "";
-            string allquerys = query.ToLower();
-
+            string allQueries = query.ToLower();
             try
             {
                 cmd_.CommandText = query;
                 cmd_.Connection = conn_;
                 connect();
                 cmd_.ExecuteNonQuery();
-
-                if (allquerys.ToLower().Contains("insert into"))
+                if (allQueries.Contains("insert into"))
                 {
-                    ret = getmessage = (" inseteted successfully ");
+                    ret = getmessage = "Inserted successfully";
                 }
-                else if (allquerys.Contains("delete form"))
+                else if (allQueries.Contains("delete from"))
                 {
-                    ret = getmessage = ("delete successfull");
+                    ret = getmessage = "Delete successful";
                 }
-                else if (allquerys.Contains("Update into") && allquerys.Contains("set"))
+                else if (allQueries.Contains("update") && allQueries.Contains("set"))
                 {
-                    ret = getmessage = ("update successfull");
+                    ret = getmessage = "Update successful";
                 }
-                else if (allquerys.Contains("Creat table"))
+                else if (allQueries.Contains("create table"))
                 {
-                    ret = getmessage = ("create table successful");
+                    ret = getmessage = "Create table successful";
                 }
-
             }
             catch (Exception exp)
             {
-
-                ret = getmessage = "failed to execute" + query + "\n resoin :" + exp.Message;
+                ret = getmessage = "Failed to execute " + query + "\nReason: " + exp.Message;
             }
-            finally { disconnect(); }
+            finally
+            {
+                disconnect();
+            }
             return ret;
         }
 
@@ -177,29 +168,23 @@ namespace Pharmonics19.DbFiles
                 cmd_.CommandText = query;
                 connect();
                 adptr_.SelectCommand = cmd_;
-
                 adptr_.Fill(dtable_);
-
                 for (int i = 0; i < dtable_.Rows.Count; i++)
                 {
                     DataRow dr = dtable_.Rows[i];
-                    ListViewItem listitem = new ListViewItem(dr["Id"].ToString());
-                    listitem.SubItems.Add(dr["Name"].ToString());
-                    listitem.SubItems.Add(dr["Quantity"].ToString());
-                    listitem.SubItems.Add(dr["PerUnitPrice"].ToString());
-                    listitem.SubItems.Add(dr["Net Amount"].ToString());
-                    dgv.Items.Add(listitem);
+                    ListViewItem listItem = new ListViewItem(dr["Id"].ToString());
+                    listItem.SubItems.Add(dr["Name"].ToString());
+                    listItem.SubItems.Add(dr["Quantity"].ToString());
+                    listItem.SubItems.Add(dr["PerUnitPrice"].ToString());
+                    listItem.SubItems.Add(dr["Net Amount"].ToString());
+                    dgv.Items.Add(listItem);
                 }
                 dgv.Refresh();
-
-                stret = "Code Executed Successfully (fillListView()=> datalayer.cs)";
-
+                stret = "Code executed successfully (fillListView() => DataAccess.cs)";
             }
             catch (Exception exp)
             {
-
-                stret = "Failed (filldatagridView()=> datalayer.cs) : " + exp.Message;
-
+                stret = "Failed (fillListView() => DataAccess.cs): " + exp.Message;
             }
             finally
             {
@@ -207,7 +192,6 @@ namespace Pharmonics19.DbFiles
                 dtable_ = null;
             }
             return stret;
-
         }
 
         public string fillgridView(string query, System.Windows.Forms.DataGridView dgv)
@@ -220,20 +204,14 @@ namespace Pharmonics19.DbFiles
                 cmd_.CommandText = query;
                 connect();
                 adptr_.SelectCommand = cmd_;
-
                 adptr_.Fill(dtable_);
-
                 dgv.DataSource = dtable_;
                 dgv.Refresh();
-
-                stret = "Code Executed Successfully (filldatagridView()=> datalayer.cs)";
-
+                stret = "Code executed successfully (fillDataGridView() => DataAccess.cs)";
             }
             catch (Exception exp)
             {
-
-                stret = "Failed (filldatagridView()=> datalayer.cs) : " + exp.Message;
-
+                stret = "Failed (fillDataGridView() => DataAccess.cs): " + exp.Message;
             }
             finally
             {
@@ -241,59 +219,44 @@ namespace Pharmonics19.DbFiles
                 dtable_ = null;
             }
             return stret;
-
         }
 
-        public string getSingleValueAsArraybyIndex(string query, out List<string> columndata, int index)
-
+        public string getSingleValueAsArrayByIndex(string query, out List<string> columnData, int index)
         {
             List<string> data = new List<string>();
             string ret;
-
             try
             {
-
                 cmd_.Connection = conn_;
                 cmd_.CommandText = query.ToLower();
-
                 connect();
                 reader_ = cmd_.ExecuteReader();
-
                 while (reader_.Read())
                 {
-
                     data.Add(reader_[index].ToString());
-
                 }
-
-
-                ret = "Operation Successfull!";
-                getmessage = "values successfully got from getSingleValueAsArrayByindex() function";
+                ret = "Operation Successful!";
+                getmessage = "Values successfully retrieved from getSingleValueAsArrayByIndex() function";
             }
             catch (Exception exp)
             {
-                ret = "Error in datalayer -> getSingleValueAsArrayByIndex() Reason:" + exp.Message;
-                getmessage = "Error in datalayer getSingleValueAsArrayByIndex() for reader_ \n" + exp.Message;
+                ret = "Error in DataAccess -> getSingleValueAsArrayByIndex() Reason: " + exp.Message;
+                getmessage = "Error in DataAccess getSingleValueAsArrayByIndex() for reader_\n" + exp.Message;
                 data.Clear();
             }
             finally
             {
                 disconnect();
             }
-
-            columndata = data;
+            columnData = data;
             return ret;
-
         }
 
-
-        public void fillcombobox(string qry, System.Windows.Forms.ComboBox cmd)
-
+        public void fillComboBox(string query, System.Windows.Forms.ComboBox cmd)
         {
             int i = 0;
             List<string> lst = new List<string>();
-            getSingleValueAsArraybyIndex(qry, out lst, 0);
-
+            getSingleValueAsArrayByIndex(query, out lst, 0);
             foreach (string val in lst)
             {
                 if (val.Length > 0)
@@ -301,13 +264,11 @@ namespace Pharmonics19.DbFiles
                     cmd.Items.Add(val);
                     i++;
                 }
-
             }
             if (i > 0)
             {
                 cmd.SelectedIndex = 0;
             }
-
         }
 
         public string[] getArray(string query, int length)
@@ -321,34 +282,20 @@ namespace Pharmonics19.DbFiles
                 reader_ = cmd_.ExecuteReader();
                 while (reader_.Read())
                 {
-                    for (int i = 0; i <= reader_.FieldCount; i++)
+                    for (int i = 0; i < reader_.FieldCount; i++)
                     {
                         ret[i] = reader_[i].ToString();
                     }
-                    //    ret[0] = reader_[0].ToString(); 
-                    //    ret[1] = reader_[1].ToString(); 
-                    //    ret[2] = reader_[2].ToString(); 
-                    //    ret[3] = reader_[3].ToString(); 
-                    //    ret[4] = reader_[4].ToString();
-                    //    ret[5] = reader_[5].ToString();
-                    //    ret[6] = reader_[6].ToString();
-                    //    ret[7] = reader_[7].ToString();
                 }
-                //ret = "successfull";
-                //getmessage = "successfull get value";
             }
-            catch (Exception e)
+            catch (Exception)
             {
-
-                // getmessage = "error" + e.Message;
             }
             finally
             {
                 disconnect();
             }
-
             return ret;
-
         }
     }
 }
