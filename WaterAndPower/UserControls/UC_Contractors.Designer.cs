@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Contractors));
             this.lblNo = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -63,47 +61,16 @@
             this.lblNo.TabIndex = 24;
             this.lblNo.Text = "00";
             // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.label6.Location = new System.Drawing.Point(6, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(368, 17);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Copyrights © 2019. All rights Reserved By C# Ui Academy";
-            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.button1);
             this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.label6);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel8.Location = new System.Drawing.Point(33, 518);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(892, 53);
             this.panel8.TabIndex = 85;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel8_Paint);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(566, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 41);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "    Assign a Job";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -119,6 +86,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "   Delete";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label2
             // 
@@ -316,7 +284,6 @@
             this.Size = new System.Drawing.Size(977, 571);
             this.Load += new System.EventHandler(this.UC_Contractors_Load);
             this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -326,7 +293,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblNo;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel7;
@@ -342,6 +308,5 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.ComboBox cmbSearchType;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
     }
 }

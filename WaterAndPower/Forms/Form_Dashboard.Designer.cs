@@ -373,9 +373,9 @@
             this.lblUserName.ForeColor = System.Drawing.Color.White;
             this.lblUserName.Location = new System.Drawing.Point(160, 20);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(120, 19);
+            this.lblUserName.Size = new System.Drawing.Size(58, 19);
             this.lblUserName.TabIndex = 14;
-            this.lblUserName.Text = "SaLaaR HuSyN";
+            this.lblUserName.Text = "Name";
             // 
             // label3
             // 

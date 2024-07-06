@@ -1,61 +1,58 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using WaterAndPower.Forms;
 using Pharmonics19.DbFiles;
+using Pharmonics19._1.Helpers;
 
 namespace WaterAndPower.UserControls
 {
     public partial class UC_Contractors : UserControl
     {
-        DataAccess ds;
+        private DataAccess ds;
+        private int selectedContractorId;
+
         public UC_Contractors()
         {
             InitializeComponent();
             ds = new DataAccess();
+            dataGridView1.CellClick += DataGridView1_CellClick;
         }
 
         private void Panel8_Paint(object sender, PaintEventArgs e)
         {
-
+            // Code for Panel8_Paint event
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            
             if (txtName.Text.Trim() == string.Empty && txtAddress.Text.Trim() == string.Empty)
             {
-                MessageBox.Show("Please Fill all required Fields","Required Fields are Empty",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Please Fill all required Fields", "Required Fields are Empty", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                DialogResult dialog = MessageBox.Show("Are you sure Want to add this Contractor?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dialog = MessageBox.Show("Are you sure want to add this Contractor?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialog == DialogResult.Yes)
                 {
-                    ds.InsertUpdateDeleteCreate("insert into tblContractors(Name,Address) VALUES('" + txtName.Text + "','" + txtAddress.Text + "')");
-                    MessageBox.Show("Contractor Added Successfully... :) :)", "Contractor Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtAddress.Text = "";
-                    txtName.Text = "";
-                    this.OnLoad(e);
+                    ds.InsertUpdateDeleteCreate("insert into contractor_tbl(user_id,contractor_name,contractor_address) VALUES('" + Helper.UserData[0] + "','" + txtName.Text + "','" + txtAddress.Text + "')");
+                    if (ds.getmessage == "Inserted successfully")
+                    {
+                        MessageBox.Show("Contractor Added Successfully!", "Contractor Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtAddress.Text = "";
+                        txtName.Text = "";
+                        this.OnLoad(e);
+                    }
                 }
-                
             }
         }
 
         private void UC_Contractors_Load(object sender, EventArgs e)
         {
-            ds.fillgridView("select * from tblContractors", dataGridView1);
+            ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl", dataGridView1);
             lblNo.Text = dataGridView1.Rows.Count.ToString();
         }
 
@@ -63,15 +60,15 @@ namespace WaterAndPower.UserControls
         {
             if (cmbSearchType.Text == "Contractor Id")
             {
-                ds.fillgridView("select * from tblContractors where id = '"+txtSearch.Text+"'", dataGridView1);
+                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_id = '" + txtSearch.Text + "'", dataGridView1);
             }
             else if (cmbSearchType.Text == "Name")
             {
-                ds.fillgridView("select * from tblContractors where Name like '%" + txtSearch.Text + "%'", dataGridView1);
+                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_name like '%" + txtSearch.Text + "%'", dataGridView1);
             }
             else if (cmbSearchType.Text == "Address")
             {
-                ds.fillgridView("select * from tblContractors where address like '%" + txtSearch.Text + "%'", dataGridView1);
+                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_address like '%" + txtSearch.Text + "%'", dataGridView1);
             }
             else
             {
@@ -81,6 +78,30 @@ namespace WaterAndPower.UserControls
             {
                 this.OnLoad(e);
             }
+        }
+
+        private void delete(int contractorId)
+        {
+            ds.InsertUpdateDeleteCreate("delete from contractor_tbl where contractor_id = '" + contractorId + "'");
+            if (ds.getmessage == "Delete successful")
+            {
+                MessageBox.Show("Contractor Deleted Successfully!", "Contractor Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                selectedContractorId = Convert.ToInt32(row.Cells["contractor_id"].Value);
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            delete(selectedContractorId);
+            this.OnLoad(e);
         }
     }
 }

@@ -1,13 +1,6 @@
 ﻿using Pharmonics19._1.Helpers;
 using Pharmonics19.DbFiles;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WaterAndPower.Forms
@@ -72,7 +65,7 @@ namespace WaterAndPower.Forms
             {
                 if (isLoginDetailsCorrect())
                 {
-                    string[] UserData = ds.getArray("select id,FullName,RoleId from tblUsers where userName = '" + txtUserName.Text + "' and password = '" + txtPassword.Text + "'", 4);
+                    string[] UserData = ds.getArray("select user_id,user_first_name,user_id from user_account where user_email = '" + txtUserName.Text + "' and user_password = '" + txtPassword.Text + "'", 4);
                     Helper.UserData = UserData;
 
                     using (Form_Dashboard fd = new Form_Dashboard())
@@ -88,7 +81,7 @@ namespace WaterAndPower.Forms
 
         private void Label6_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Please contact with System Administrator: info@csharpui.com","Forgot Password?",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("Please contact with System Administrator: freelipino@gmail.com","Forgot Password?",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         private void TxtPassword_KeyUp(object sender, KeyEventArgs e)
