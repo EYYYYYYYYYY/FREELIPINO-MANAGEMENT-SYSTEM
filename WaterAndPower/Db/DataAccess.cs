@@ -11,7 +11,7 @@ namespace Pharmonics19.DbFiles
 {
     class DataAccess
     {
-        static string _ConnectionString = "server=localhost;port=3306;uid=root;pwd=[password];database=freelipino";
+        static string _ConnectionString = "server=localhost;port=3307;uid=root;pwd=Cabrera09;database=freelipino";
         MySqlCommand cmd_;
         MySqlConnection conn_;
         MySqlDataAdapter adptr_;

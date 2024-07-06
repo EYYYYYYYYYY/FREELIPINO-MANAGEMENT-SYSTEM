@@ -42,11 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtTsAmount = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtPageNo = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtMBNo = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbHOA = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.dragControl1 = new DragControlDemo.DragControl();
@@ -95,7 +91,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(16, 16);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(114, 93);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 96;
             this.pictureBox2.TabStop = false;
@@ -107,9 +103,10 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(331, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 25);
+            this.label1.Size = new System.Drawing.Size(105, 25);
             this.label1.TabIndex = 97;
-            this.label1.Text = "Add New Work";
+            this.label1.Text = "Add Job ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtTitle
             // 
@@ -128,18 +125,20 @@
             this.txtTitle.Size = new System.Drawing.Size(551, 35);
             this.txtTitle.TabIndex = 0;
             this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTitle.OnValueChanged += new System.EventHandler(this.txtTitle_OnValueChanged);
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(104, 122);
+            this.label4.Location = new System.Drawing.Point(79, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 18);
+            this.label4.Size = new System.Drawing.Size(104, 19);
             this.label4.TabIndex = 99;
-            this.label4.Text = "Work Title:";
+            this.label4.Text = "Work Name:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtTsNo
             // 
@@ -165,11 +164,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(97, 165);
+            this.label2.Location = new System.Drawing.Point(63, 157);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 18);
+            this.label2.Size = new System.Drawing.Size(120, 18);
             this.label2.TabIndex = 101;
-            this.label2.Text = "TS Number:";
+            this.label2.Text = "Contractor No.:";
             // 
             // label3
             // 
@@ -179,9 +178,10 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(452, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 18);
+            this.label3.Size = new System.Drawing.Size(81, 18);
             this.label3.TabIndex = 101;
-            this.label3.Text = "TS Amount:";
+            this.label3.Text = "Work Fee:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtTsAmount
             // 
@@ -207,41 +207,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(88, 207);
+            this.label5.Location = new System.Drawing.Point(46, 208);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 18);
+            this.label5.Size = new System.Drawing.Size(137, 18);
             this.label5.TabIndex = 101;
-            this.label5.Text = "MB Number:";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(464, 208);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 18);
-            this.label6.TabIndex = 101;
-            this.label6.Text = "Page No:";
-            // 
-            // txtPageNo
-            // 
-            this.txtPageNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPageNo.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPageNo.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPageNo.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPageNo.BorderThickness = 2;
-            this.txtPageNo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPageNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPageNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPageNo.isPassword = false;
-            this.txtPageNo.Location = new System.Drawing.Point(542, 202);
-            this.txtPageNo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPageNo.Name = "txtPageNo";
-            this.txtPageNo.Size = new System.Drawing.Size(199, 35);
-            this.txtPageNo.TabIndex = 4;
-            this.txtPageNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.label5.Text = "Work Description:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtMBNo
             // 
@@ -257,30 +228,9 @@
             this.txtMBNo.Location = new System.Drawing.Point(190, 198);
             this.txtMBNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtMBNo.Name = "txtMBNo";
-            this.txtMBNo.Size = new System.Drawing.Size(249, 35);
+            this.txtMBNo.Size = new System.Drawing.Size(249, 132);
             this.txtMBNo.TabIndex = 3;
             this.txtMBNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(43, 252);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 18);
-            this.label7.TabIndex = 102;
-            this.label7.Text = "Head of Accounts:";
-            // 
-            // cmbHOA
-            // 
-            this.cmbHOA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbHOA.FormattingEnabled = true;
-            this.cmbHOA.Location = new System.Drawing.Point(192, 248);
-            this.cmbHOA.Name = "cmbHOA";
-            this.cmbHOA.Size = new System.Drawing.Size(247, 29);
-            this.cmbHOA.TabIndex = 5;
             // 
             // button5
             // 
@@ -288,7 +238,7 @@
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.SeaGreen;
+            this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(599, 300);
@@ -321,18 +271,14 @@
             // Form_AddWork
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(826, 382);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.cmbHOA);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtMBNo);
-            this.Controls.Add(this.txtPageNo);
             this.Controls.Add(this.txtTsAmount);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtTsNo);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTitle);
@@ -370,11 +316,7 @@
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtTsAmount;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtPageNo;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtMBNo;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cmbHOA;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
         private DragControlDemo.DragControl dragControl1;

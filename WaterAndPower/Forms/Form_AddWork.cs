@@ -32,30 +32,44 @@ namespace WaterAndPower.Forms
                 DialogResult dialog = MessageBox.Show("Are You Sure Want to add this Work?","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
                 if (dialog == DialogResult.Yes)
                 {
-                    string hoaId = ds.getSingleValueSingleColumn("Select id from tblHeadOfAccounts where AccountNo = '"+cmbHOA.Text+"'",out hoaId,0);
-                    ds.InsertUpdateDeleteCreate("insert into tblWorks(title,TSNo,TSAmount,MBNo,PageNo,HOAId) VALUES('"+txtTitle.Text+"','"+txtTsNo.Text+ "','" + txtTsAmount.Text + "','" + txtMBNo.Text + "','" + txtPageNo.Text + "','" + hoaId + "')");
-                    MessageBox.Show("Work Added Successfully..!!","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    this.Dispose();
+                  
                 }
             }
         }
 
         private bool isFormValid()
         {
-            if (txtTitle.Text.Trim() == string.Empty || txtMBNo.Text.Trim() == string.Empty || txtPageNo.Text.Trim() == string.Empty || txtTsAmount.Text.Trim() == string.Empty || txtTsNo.Text.Trim() == string.Empty)
-            {
-                MessageBox.Show("Please Fill all Required Fields...!!","Reuired Fields are Empty",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+
         }
 
         private void Form_AddWork_Load(object sender, EventArgs e)
         {
             ds.fillComboBox("select AccountNo from tblHeadOfAccounts", cmbHOA);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTitle_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

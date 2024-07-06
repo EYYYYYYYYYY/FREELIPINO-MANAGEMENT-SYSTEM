@@ -1,21 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\",
+  "WorkspaceRootPath": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\xampp\\htdocs\\freelipino-management-system\\waterandpower\\db\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\laragon\\www\\freeeelipino\\freelipino-management-system\\waterandpower\\forms\\form_addwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_addwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\laragon\\www\\freeeelipino\\freelipino-management-system\\waterandpower\\forms\\form_addwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_addwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\laragon\\www\\freeeelipino\\freelipino-management-system\\waterandpower\\db\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\db\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\laragon\\www\\freeeelipino\\freelipino-management-system\\waterandpower\\forms\\form_addwork.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_addwork.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,55 +38,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form_AddWork.Designer.cs",
+              "DocumentMoniker": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.Designer.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_AddWork.Designer.cs",
+              "ToolTip": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.Designer.cs",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_AddWork.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T14:36:26.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form_AddWork.cs",
+              "DocumentMoniker": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_AddWork.cs",
+              "ToolTip": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.cs",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_AddWork.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwE4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T14:33:50.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form_AddWork.cs [Design]",
+              "DocumentMoniker": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_AddWork.cs",
+              "ToolTip": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_AddWork.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T14:31:27.691Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DataAccess.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Db\\DataAccess.cs",
+              "DocumentMoniker": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Db\\DataAccess.cs",
               "RelativeDocumentMoniker": "WaterAndPower\\Db\\DataAccess.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Db\\DataAccess.cs",
+              "ToolTip": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Db\\DataAccess.cs",
               "RelativeToolTip": "WaterAndPower\\Db\\DataAccess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABcAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-06T09:02:12.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form_Login.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Login.cs",
+              "DocumentMoniker": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Login.cs",
               "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_Login.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Login.cs",
+              "ToolTip": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Login.cs",
               "RelativeToolTip": "WaterAndPower\\Forms\\Form_Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAgAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T08:33:56.945Z"
+              "WhenOpened": "2024-07-06T08:33:56.945Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Form_Dashboard.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Dashboard.cs",
+              "DocumentMoniker": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Dashboard.cs",
               "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_Dashboard.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Dashboard.cs",
+              "ToolTip": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Dashboard.cs",
               "RelativeToolTip": "WaterAndPower\\Forms\\Form_Dashboard.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAAwJYAAAAXAAAA",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAwJYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T06:26:57.497Z"
+              "WhenOpened": "2024-07-06T06:26:57.497Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Form_Login.cs [Design]",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Login.cs",
+              "DocumentMoniker": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Login.cs",
               "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_Login.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Login.cs [Design]",
+              "ToolTip": "C:\\laragon\\www\\freeeelipino\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Login.cs [Design]",
               "RelativeToolTip": "WaterAndPower\\Forms\\Form_Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T06:09:08.217Z"
+              "WhenOpened": "2024-07-06T06:09:08.217Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
