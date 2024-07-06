@@ -38,7 +38,6 @@
             this.btnWorks = new System.Windows.Forms.Button();
             this.btnAnalytics = new System.Windows.Forms.Button();
             this.btnContractors = new System.Windows.Forms.Button();
-            this.btnJobs = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,7 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblTime = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -74,7 +72,6 @@
             this.panelLeft.Controls.Add(this.btnWorks);
             this.panelLeft.Controls.Add(this.btnAnalytics);
             this.panelLeft.Controls.Add(this.btnContractors);
-            this.panelLeft.Controls.Add(this.btnJobs);
             this.panelLeft.Controls.Add(this.btnDashboard);
             this.panelLeft.Controls.Add(this.panel2);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
@@ -113,7 +110,7 @@
             this.btnSettings.ForeColor = System.Drawing.Color.White;
             this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(12, 438);
+            this.btnSettings.Location = new System.Drawing.Point(12, 408);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(209, 44);
             this.btnSettings.TabIndex = 1;
@@ -130,7 +127,7 @@
             this.btnReports.ForeColor = System.Drawing.Color.White;
             this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
             this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(12, 392);
+            this.btnReports.Location = new System.Drawing.Point(12, 358);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(209, 44);
             this.btnReports.TabIndex = 1;
@@ -147,7 +144,7 @@
             this.btnWorks.ForeColor = System.Drawing.Color.White;
             this.btnWorks.Image = ((System.Drawing.Image)(resources.GetObject("btnWorks.Image")));
             this.btnWorks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWorks.Location = new System.Drawing.Point(12, 300);
+            this.btnWorks.Location = new System.Drawing.Point(12, 258);
             this.btnWorks.Name = "btnWorks";
             this.btnWorks.Size = new System.Drawing.Size(209, 44);
             this.btnWorks.TabIndex = 1;
@@ -164,7 +161,7 @@
             this.btnAnalytics.ForeColor = System.Drawing.Color.White;
             this.btnAnalytics.Image = ((System.Drawing.Image)(resources.GetObject("btnAnalytics.Image")));
             this.btnAnalytics.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnalytics.Location = new System.Drawing.Point(12, 346);
+            this.btnAnalytics.Location = new System.Drawing.Point(12, 308);
             this.btnAnalytics.Name = "btnAnalytics";
             this.btnAnalytics.Size = new System.Drawing.Size(209, 44);
             this.btnAnalytics.TabIndex = 1;
@@ -181,31 +178,14 @@
             this.btnContractors.ForeColor = System.Drawing.Color.White;
             this.btnContractors.Image = ((System.Drawing.Image)(resources.GetObject("btnContractors.Image")));
             this.btnContractors.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnContractors.Location = new System.Drawing.Point(12, 254);
+            this.btnContractors.Location = new System.Drawing.Point(12, 208);
             this.btnContractors.Name = "btnContractors";
             this.btnContractors.Size = new System.Drawing.Size(209, 44);
             this.btnContractors.TabIndex = 1;
-            this.btnContractors.Text = "     Contractors";
+            this.btnContractors.Text = "     Client";
             this.btnContractors.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnContractors.UseVisualStyleBackColor = true;
             this.btnContractors.Click += new System.EventHandler(this.BtnContractors_Click);
-            // 
-            // btnJobs
-            // 
-            this.btnJobs.FlatAppearance.BorderSize = 0;
-            this.btnJobs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnJobs.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnJobs.ForeColor = System.Drawing.Color.White;
-            this.btnJobs.Image = ((System.Drawing.Image)(resources.GetObject("btnJobs.Image")));
-            this.btnJobs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnJobs.Location = new System.Drawing.Point(12, 208);
-            this.btnJobs.Name = "btnJobs";
-            this.btnJobs.Size = new System.Drawing.Size(209, 44);
-            this.btnJobs.TabIndex = 1;
-            this.btnJobs.Text = "     Assigned Jobs";
-            this.btnJobs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnJobs.UseVisualStyleBackColor = true;
-            this.btnJobs.Click += new System.EventHandler(this.BtnJobs_Click);
             // 
             // btnDashboard
             // 
@@ -274,9 +254,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(24, 16);
+            this.pictureBox2.Location = new System.Drawing.Point(32, 16);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(143, 105);
+            this.pictureBox2.Size = new System.Drawing.Size(165, 123);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
@@ -284,7 +264,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.lblTime);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.button2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(223, 0);
@@ -292,30 +272,21 @@
             this.panel3.Size = new System.Drawing.Size(977, 49);
             this.panel3.TabIndex = 0;
             // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.lblTime.Location = new System.Drawing.Point(71, 17);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(83, 19);
-            this.lblTime.TabIndex = 8;
-            this.lblTime.Text = "HH:MM:SS";
-            // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button2.Dock = System.Windows.Forms.DockStyle.Right;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(920, 0);
+            this.button2.Location = new System.Drawing.Point(904, 0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(57, 49);
+            this.button2.Size = new System.Drawing.Size(73, 49);
             this.button2.TabIndex = 2;
             this.button2.Text = "X";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // panel4
@@ -354,17 +325,18 @@
             this.lblRole.Size = new System.Drawing.Size(62, 19);
             this.lblRole.TabIndex = 14;
             this.lblRole.Text = "Admin";
+            this.lblRole.Click += new System.EventHandler(this.lblRole_Click);
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(794, 35);
+            this.lblTitle.Location = new System.Drawing.Point(747, 30);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(159, 32);
+            this.lblTitle.Size = new System.Drawing.Size(146, 37);
             this.lblTitle.TabIndex = 14;
-            this.lblTitle.Text = "Dashboard";
+            this.lblTitle.Text = "Welcome !";
             // 
             // lblUserName
             // 
@@ -390,6 +362,7 @@
             // 
             // panelContainer
             // 
+            this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(223, 149);
             this.panelContainer.Name = "panelContainer";
@@ -420,7 +393,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
@@ -442,12 +414,10 @@
         private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.Button btnAnalytics;
         private System.Windows.Forms.Button btnContractors;
-        private System.Windows.Forms.Button btnJobs;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Button btnAboutUs;

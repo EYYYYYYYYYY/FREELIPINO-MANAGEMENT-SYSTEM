@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Jobs));
             this.lblQty = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnEdit = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -61,18 +60,6 @@
             this.lblQty.Size = new System.Drawing.Size(24, 18);
             this.lblQty.TabIndex = 24;
             this.lblQty.Text = "00";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.label6.Location = new System.Drawing.Point(6, 8);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(368, 17);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Copyrights © 2019. All rights Reserved By C# Ui Academy";
             // 
             // btnEdit
             // 
@@ -148,7 +135,6 @@
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.lblQty);
             this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.label6);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel8.Location = new System.Drawing.Point(10, 536);
             this.panel8.Name = "panel8";
@@ -245,7 +231,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(10, 64);
@@ -257,6 +243,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(957, 472);
             this.dataGridView1.TabIndex = 87;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // UC_Jobs
             // 
@@ -282,7 +269,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblQty;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox txtSearch;

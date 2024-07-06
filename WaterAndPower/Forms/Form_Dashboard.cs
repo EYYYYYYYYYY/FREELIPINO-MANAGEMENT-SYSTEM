@@ -26,6 +26,7 @@ namespace WaterAndPower.Forms
 
         }
 
+
         private void Button2_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -147,6 +148,11 @@ namespace WaterAndPower.Forms
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRole_Click(object sender, EventArgs e)
         {
 
         }
