@@ -20,6 +20,17 @@ namespace WaterAndPower.UserControls
             ds = new DataAccess();
         }
         string contractors, noOfJobs, AssignedJobs, completedJobs, WorkDoneAmt, workToBeDone, TotalPaid;
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void UC_Dashboard_Load(object sender, EventArgs e)
         {
            contractors = ds.getSingleValueSingleColumn("select count(id) from tblContractors",out contractors,0);
@@ -34,7 +45,6 @@ namespace WaterAndPower.UserControls
 
             lblContractors.Text = contractors;
             lblJobs.Text = noOfJobs;
-            blAssignedJobs.Text = AssignedJobs;
             blCompletedJobs.Text = completedJobs;
             blWorkDone.Text = WorkDoneAmt;
             blWorkToBeDone.Text = workToBeDone;

@@ -52,6 +52,12 @@ namespace WaterAndPower.UserControls
         }
 
         string workId,title,TsAmt;
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             foreach (DataGridViewRow rowUpdate in dataGridView1.SelectedRows)
