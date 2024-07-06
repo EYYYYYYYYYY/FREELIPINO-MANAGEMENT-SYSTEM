@@ -140,7 +140,7 @@
             this.blWorkToBeDone.AutoSize = true;
             this.blWorkToBeDone.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blWorkToBeDone.ForeColor = System.Drawing.Color.White;
-            this.blWorkToBeDone.Location = new System.Drawing.Point(41, 50);
+            this.blWorkToBeDone.Location = new System.Drawing.Point(26, 50);
             this.blWorkToBeDone.Name = "blWorkToBeDone";
             this.blWorkToBeDone.Size = new System.Drawing.Size(43, 23);
             this.blWorkToBeDone.TabIndex = 0;
@@ -229,7 +229,7 @@
             this.lblJobs.AutoSize = true;
             this.lblJobs.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobs.ForeColor = System.Drawing.Color.White;
-            this.lblJobs.Location = new System.Drawing.Point(43, 50);
+            this.lblJobs.Location = new System.Drawing.Point(24, 50);
             this.lblJobs.Name = "lblJobs";
             this.lblJobs.Size = new System.Drawing.Size(54, 23);
             this.lblJobs.TabIndex = 0;
@@ -273,7 +273,7 @@
             this.lblContractors.AutoSize = true;
             this.lblContractors.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContractors.ForeColor = System.Drawing.Color.White;
-            this.lblContractors.Location = new System.Drawing.Point(40, 50);
+            this.lblContractors.Location = new System.Drawing.Point(24, 51);
             this.lblContractors.Name = "lblContractors";
             this.lblContractors.Size = new System.Drawing.Size(54, 23);
             this.lblContractors.TabIndex = 0;
@@ -295,11 +295,11 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(62, 25);
+            this.label2.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(48, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(275, 25);
+            this.label2.Size = new System.Drawing.Size(425, 38);
             this.label2.TabIndex = 5;
             this.label2.Text = "Freelancers Job Overview";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -331,7 +331,7 @@
             this.lblTotalPaid.AutoSize = true;
             this.lblTotalPaid.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPaid.ForeColor = System.Drawing.Color.White;
-            this.lblTotalPaid.Location = new System.Drawing.Point(32, 49);
+            this.lblTotalPaid.Location = new System.Drawing.Point(23, 48);
             this.lblTotalPaid.Name = "lblTotalPaid";
             this.lblTotalPaid.Size = new System.Drawing.Size(60, 25);
             this.lblTotalPaid.TabIndex = 0;
@@ -351,8 +351,7 @@
             // UC_Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);

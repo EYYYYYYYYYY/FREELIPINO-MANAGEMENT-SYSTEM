@@ -151,5 +151,10 @@ namespace WaterAndPower.Forms
         {
 
         }
+
+        private void lblRole_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
