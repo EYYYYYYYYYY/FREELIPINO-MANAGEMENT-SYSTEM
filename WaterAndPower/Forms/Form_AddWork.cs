@@ -27,24 +27,14 @@ namespace WaterAndPower.Forms
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            if (isFormValid())
-            {
-                DialogResult dialog = MessageBox.Show("Are You Sure Want to add this Work?","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-                if (dialog == DialogResult.Yes)
-                {
-                  
-                }
-            }
+            
         }
 
-        private bool isFormValid()
-        {
-
-        }
+       
 
         private void Form_AddWork_Load(object sender, EventArgs e)
         {
-            ds.fillComboBox("select AccountNo from tblHeadOfAccounts", cmbHOA);
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
