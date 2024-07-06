@@ -52,7 +52,7 @@ namespace WaterAndPower.UserControls
 
         private void UC_Contractors_Load(object sender, EventArgs e)
         {
-            ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl", dataGridView1);
+            ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
             lblNo.Text = dataGridView1.Rows.Count.ToString();
         }
 
@@ -60,15 +60,15 @@ namespace WaterAndPower.UserControls
         {
             if (cmbSearchType.Text == "Contractor Id")
             {
-                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_id = '" + txtSearch.Text + "'", dataGridView1);
+                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_id = '" + txtSearch.Text + "' AND where user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
             }
             else if (cmbSearchType.Text == "Name")
             {
-                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_name like '%" + txtSearch.Text + "%'", dataGridView1);
+                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_name like '%" + txtSearch.Text + "%' AND where user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
             }
             else if (cmbSearchType.Text == "Address")
             {
-                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_address like '%" + txtSearch.Text + "%'", dataGridView1);
+                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_address like '%" + txtSearch.Text + "%' AND where user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
             }
             else
             {
@@ -94,7 +94,7 @@ namespace WaterAndPower.UserControls
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-                selectedContractorId = Convert.ToInt32(row.Cells["contractor_id"].Value);
+                selectedContractorId = Convert.ToInt32(row.Cells["Contractor Id"].Value);
             }
         }
 

@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WaterAndPower.Forms;
 using Pharmonics19.DbFiles;
+using Pharmonics19._1.Helpers;
 
 namespace WaterAndPower.UserControls
 {
     public partial class UC_AssignedJobs : UserControl
     {
         DataAccess ds;
+        private int selectedWorkId;
         public UC_AssignedJobs()
         {
             InitializeComponent();
             ds = new DataAccess();
+            dataGridView1.CellClick += DataGridView1_CellClick;
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -57,22 +53,20 @@ namespace WaterAndPower.UserControls
         private bool completed;
         private void UC_AssignedJobs_Load(object sender, EventArgs e)
         {
-            ds.fillgridView("select wa.id,w.title as 'Work Title',c.name as 'Contractor Name',wa.CACost,wa.AssignDate,wa.Period from tblWorkAssigned as wa inner join tblWorks as w ON wa.WorkId = w.id inner join tblContractors as c ON wa.ContractorId = c.id where w.isAssigned = 1 and wa.isCompleted = 0", dataGridView1);
+            ds.fillgridView("select work_id as `Work ID`, work_name as `Work Name`, work_desc as `Work Description`, work_fee as `Amount`, start_date as `Date Added`, end_date as `Date Ended`, status as `Status` from work_tbl where user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
             completed = false;
         }
 
         string workAssignId, title, ContractorName,CACost;
 
-        private void DataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            using (Form_ViewCalculations vc = new Form_ViewCalculations())
+            if (e.RowIndex >= 0)
             {
-                vc.WorkAssignId = workAssignId;
-                vc.WorkTitle = title;
-                vc.ShowDialog();
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                selectedWorkId = Convert.ToInt32(row.Cells["work_id"].Value);
             }
         }
-
         private void BtnEdit_Click(object sender, EventArgs e)
         {
             if (!completed)
@@ -88,15 +82,5 @@ namespace WaterAndPower.UserControls
             }
         }
 
-        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            foreach (DataGridViewRow rowUpdate in dataGridView1.SelectedRows)
-            {
-                workAssignId = rowUpdate.Cells[0].Value.ToString();
-                title = rowUpdate.Cells[1].Value.ToString();
-                ContractorName = rowUpdate.Cells[2].Value.ToString();
-                CACost = rowUpdate.Cells[3].Value.ToString();
-            }
-        }
     }
 }

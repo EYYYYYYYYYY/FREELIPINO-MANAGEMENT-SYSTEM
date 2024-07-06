@@ -1,40 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WaterAndPower.Forms;
 using Pharmonics19.DbFiles;
+using Pharmonics19._1.Helpers;
 
 namespace WaterAndPower.UserControls
 {
     public partial class UC_Jobs : UserControl
     {
         DataAccess ds;
+        private int selectedWorkId;
         public UC_Jobs()
         {
             InitializeComponent();
             ds = new DataAccess();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            if (workId != null)
-            {
-                using (Form_AssignWork aw = new Form_AssignWork())
-                {
-                    aw.workId = workId;
-                    aw.TsAmt = TsAmt;
-                    aw.workTitle = title;
-                    aw.ShowDialog();
-                    this.OnLoad(e);
-                }
-            }
-            
         }
 
         private void BtnUsers_Click(object sender, EventArgs e)
@@ -48,17 +27,15 @@ namespace WaterAndPower.UserControls
 
         private void UC_Jobs_Load(object sender, EventArgs e)
         {
-            ds.fillgridView("select * from tblWorks where isAssigned = 0", dataGridView1);
+            ds.fillgridView("select work_id as `Work ID`, work_name as `Work Name`, work_desc as `Work Description`, work_fee as `Amount`, start_date as `Date Added`, end_date as `Date Ended`, status as `Status` from work_tbl where user_id = '" + Helper.UserData[0] + "'", dataGridView1);
         }
 
-        string workId,title,TsAmt;
         private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            foreach (DataGridViewRow rowUpdate in dataGridView1.SelectedRows)
+            if (e.RowIndex >= 0)
             {
-                workId = rowUpdate.Cells[0].Value.ToString();
-                title = rowUpdate.Cells[1].Value.ToString();
-                TsAmt = rowUpdate.Cells[3].Value.ToString();
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                selectedWorkId = Convert.ToInt32(row.Cells["Work Id"].Value);
             }
         }
     }
