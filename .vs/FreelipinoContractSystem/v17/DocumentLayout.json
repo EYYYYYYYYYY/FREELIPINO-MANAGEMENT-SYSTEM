@@ -1,41 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\",
+  "WorkspaceRootPath": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\xampp\\htdocs\\freelipino-management-system\\waterandpower\\usercontrols\\uc_contractors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_contractors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\xampp\\htdocs\\freelipino-management-system\\waterandpower\\usercontrols\\uc_jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\xampp\\htdocs\\freelipino-management-system\\waterandpower\\usercontrols\\uc_jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\usercontrols\\uc_jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\xampp\\htdocs\\freelipino-management-system\\waterandpower\\usercontrols\\uc_assignedjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_assignedjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\usercontrols\\uc_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\xampp\\htdocs\\freelipino-management-system\\waterandpower\\forms\\form_addwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_addwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\usercontrols\\uc_jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\xampp\\htdocs\\freelipino-management-system\\waterandpower\\usercontrols\\uc_assignedjobs.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_assignedjobs.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|c:\\xampp\\htdocs\\freelipino-management-system\\waterandpower\\usercontrols\\uc_assignedjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_assignedjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\db\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_addwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_addwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_addwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_addwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_aboutus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_aboutus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_addworkdone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_addworkdone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_assignwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_assignwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\forms\\form_payamount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\forms\\form_payamount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\usercontrols\\uc_analytics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_analytics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\usercontrols\\uc_assignedjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_assignedjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\usercontrols\\uc_contractors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_contractors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\usercontrols\\uc_contractors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_contractors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\usercontrols\\uc_assignedjobs.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_assignedjobs.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\usercontrols\\uc_assignedjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\usercontrols\\uc_assignedjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\waterandpower\\db\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F90E48E-2B30-499C-AD3E-935B0FA71E18}|WaterAndPower\\Freelipino.csproj|solutionrelative:waterandpower\\db\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,128 +82,223 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 16,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form_AddWork.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.cs",
-              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_AddWork.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.cs",
-              "RelativeToolTip": "WaterAndPower\\Forms\\Form_AddWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T16:04:18.312Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UC_AssignedJobs.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
-              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
-              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAgwDMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T16:22:16.956Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UC_Jobs.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Jobs.cs",
-              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_Jobs.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Jobs.cs",
-              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_Jobs.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAwwDQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T16:34:02.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UC_AssignedJobs.Designer.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.Designer.cs",
-              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_AssignedJobs.Designer.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.Designer.cs",
-              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_AssignedJobs.Designer.cs",
-              "ViewState": "AQIAACEBAAAAAAAAAAAtwAsBAACAAAAA",
+              "Title": "Form_AddWork.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_AddWork.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_AddWork.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T16:32:39.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T16:58:43.637Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UC_AssignedJobs.cs [Design]",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
-              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.cs [Design]",
-              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_AssignedJobs.cs [Design]",
+              "Title": "Form_AboutUs.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AboutUs.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_AboutUs.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AboutUs.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_AboutUs.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T16:22:09.311Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-06T16:58:42.837Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UC_Contractors.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Contractors.cs",
-              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_Contractors.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Contractors.cs",
-              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_Contractors.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAuwGAAAABDAAAA",
+              "DocumentIndex": 10,
+              "Title": "Form_PayAmount.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_PayAmount.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_PayAmount.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_PayAmount.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_PayAmount.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T16:22:25.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UC_Jobs.cs [Design]",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Jobs.cs",
-              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_Jobs.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Jobs.cs [Design]",
-              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_Jobs.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T16:36:15.254Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-06T16:58:37.268Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Form_Dashboard.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Dashboard.cs",
-              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_Dashboard.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Dashboard.cs",
-              "RelativeToolTip": "WaterAndPower\\Forms\\Form_Dashboard.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Title": "Form_AddWorkDone.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWorkDone.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_AddWorkDone.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWorkDone.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_AddWorkDone.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T16:04:18.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T16:51:04.914Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Form_AssignWork.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AssignWork.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_AssignWork.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AssignWork.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_AssignWork.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:51:04.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UC_Analytics.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Analytics.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_Analytics.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Analytics.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_Analytics.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:51:02.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UC_Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Dashboard.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_Dashboard.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Dashboard.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:50:57.398Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UC_Contractors.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Contractors.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_Contractors.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Contractors.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_Contractors.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:50:35.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form_Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Dashboard.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_Dashboard.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Dashboard.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:50:10.134Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form_AddWork.cs",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_AddWork.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_AddWork.cs",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_AddWork.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:49:22.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UC_AssignedJobs.cs",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
+              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:49:22.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UC_Jobs.cs",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Jobs.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_Jobs.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Jobs.cs",
+              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_Jobs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:49:22.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UC_AssignedJobs.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.Designer.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_AssignedJobs.Designer.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.Designer.cs",
+              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_AssignedJobs.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:49:22.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UC_AssignedJobs.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_AssignedJobs.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_AssignedJobs.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_AssignedJobs.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:49:22.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UC_Contractors.cs",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Contractors.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_Contractors.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Contractors.cs",
+              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_Contractors.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAiwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:49:22.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UC_Jobs.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Jobs.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\UserControls\\UC_Jobs.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\UserControls\\UC_Jobs.cs [Design]",
+              "RelativeToolTip": "WaterAndPower\\UserControls\\UC_Jobs.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:49:22.234Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form_Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Dashboard.cs",
+              "RelativeDocumentMoniker": "WaterAndPower\\Forms\\Form_Dashboard.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Forms\\Form_Dashboard.cs",
+              "RelativeToolTip": "WaterAndPower\\Forms\\Form_Dashboard.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAIwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T16:49:22.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "DataAccess.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Db\\DataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Db\\DataAccess.cs",
               "RelativeDocumentMoniker": "WaterAndPower\\Db\\DataAccess.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Db\\DataAccess.cs",
+              "ToolTip": "C:\\Users\\junma\\source\\repos\\FREELIPINO\\FREELIPINO-MANAGEMENT-SYSTEM\\WaterAndPower\\Db\\DataAccess.cs",
               "RelativeToolTip": "WaterAndPower\\Db\\DataAccess.cs",
               "ViewState": "AQIAAPMAAAAAAAAAAAAkwAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T16:04:18.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T16:49:22.237Z"
             }
           ]
         }

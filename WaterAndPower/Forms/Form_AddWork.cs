@@ -33,21 +33,7 @@ namespace WaterAndPower.Forms
         }
         private void Button5_Click(object sender, EventArgs e)
         {
-<<<<<<< Updated upstream
-            
-=======
-            if (isFormValid())
-            {
-                DialogResult dialog = MessageBox.Show("Are You Sure Want to add this Work?","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-                if (dialog == DialogResult.Yes)
-                {
-                    string hoaId = ds.getSingleValueSingleColumn("Select id from tblHeadOfAccounts where AccountNo = '"+cmbHOA.Text+"'",out hoaId,0);
-                    ds.InsertUpdateDeleteCreate("insert into work_tbl(contractor_id,wor_name,work_desc,work_fee) VALUES('"+txtTitle.Text+"','"+txtTsNo.Text+ "','" + txtTsAmount.Text + "','" + txtMBNo.Text + "','" + txtPageNo.Text + "','" + hoaId + "')");
-                    MessageBox.Show("Work Added Successfully..!!","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    this.Dispose();
-                }
-            }
->>>>>>> Stashed changes
+
         }
 
        

@@ -85,10 +85,7 @@ namespace WaterAndPower.Forms
 
         private void BtnJobs_Click(object sender, EventArgs e)
         {
-            lblTitle.Text = "Assigned Jobs";
-            slidePanel(btnJobs);
-            UC_AssignedJobs ass = new UC_AssignedJobs();
-            addControls(ass);
+            
         }
 
         private void BtnAboutUs_Click(object sender, EventArgs e)
