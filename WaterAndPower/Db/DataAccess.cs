@@ -1,26 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace Pharmonics19.DbFiles
 {
-    class DataAccess
+    // Base class for common database operations
+    class BaseDataAccess
     {
-        static string _ConnectionString = "server=localhost;port=3307;uid=root;pwd=Cabrera09;database=freelipino";
-        MySqlCommand cmd_;
-        MySqlConnection conn_;
-        MySqlDataAdapter adptr_;
-        MySqlDataReader reader_;
-        DataTable dtable_;
+        protected static string _ConnectionString = "server=localhost;port=3306;uid=root;pwd=[password];database=freelipino";
+        protected MySqlCommand cmd_;
+        protected MySqlConnection conn_;
+        protected MySqlDataAdapter adptr_;
+        protected MySqlDataReader reader_;
+        protected DataTable dtable_;
 
-        public string getmessage { get; set; }
+        public string getmessage { get; protected set; }
 
-        public DataAccess()
+        public BaseDataAccess()
         {
             conn_ = new MySqlConnection(_ConnectionString);
             cmd_ = new MySqlCommand();
@@ -55,6 +53,12 @@ namespace Pharmonics19.DbFiles
                 return false;
             }
         }
+    }
+
+    // Derived class for specific data access operations
+    class DataAccess : BaseDataAccess
+    {
+        public DataAccess() : base() { }
 
         public string getSingleValueSingleColumn(string query, out string columnData, int index)
         {
@@ -104,7 +108,7 @@ namespace Pharmonics19.DbFiles
                 {
                     ret = getmessage = "Table Created Successfully!";
                 }
-                else if (allQueries.Contains("update ") && allQueries.Contains("set="))
+                else if (allQueries.Contains("update "))
                 {
                     ret = getmessage = "Updated Successfully";
                 }
@@ -180,11 +184,11 @@ namespace Pharmonics19.DbFiles
                     dgv.Items.Add(listItem);
                 }
                 dgv.Refresh();
-                stret = "Code executed successfully (fillListView() => DataAccess.cs)";
+                stret = "Code executed successfully (FillListView() => DataAccess.cs)";
             }
             catch (Exception exp)
             {
-                stret = "Failed (fillListView() => DataAccess.cs): " + exp.Message;
+                stret = "Failed (FillListView() => DataAccess.cs): " + exp.Message;
             }
             finally
             {
@@ -207,11 +211,11 @@ namespace Pharmonics19.DbFiles
                 adptr_.Fill(dtable_);
                 dgv.DataSource = dtable_;
                 dgv.Refresh();
-                stret = "Code executed successfully (fillDataGridView() => DataAccess.cs)";
+                stret = "Code executed successfully (FillGridView() => DataAccess.cs)";
             }
             catch (Exception exp)
             {
-                stret = "Failed (fillDataGridView() => DataAccess.cs): " + exp.Message;
+                stret = "Failed (FillGridView() => DataAccess.cs): " + exp.Message;
             }
             finally
             {
@@ -236,12 +240,12 @@ namespace Pharmonics19.DbFiles
                     data.Add(reader_[index].ToString());
                 }
                 ret = "Operation Successful!";
-                getmessage = "Values successfully retrieved from getSingleValueAsArrayByIndex() function";
+                getmessage = "Values successfully retrieved from GetSingleValueAsArrayByIndex() function";
             }
             catch (Exception exp)
             {
-                ret = "Error in DataAccess -> getSingleValueAsArrayByIndex() Reason: " + exp.Message;
-                getmessage = "Error in DataAccess getSingleValueAsArrayByIndex() for reader_\n" + exp.Message;
+                ret = "Error in DataAccess -> GetSingleValueAsArrayByIndex() Reason: " + exp.Message;
+                getmessage = "Error in DataAccess GetSingleValueAsArrayByIndex() for reader_\n" + exp.Message;
                 data.Clear();
             }
             finally

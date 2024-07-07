@@ -60,15 +60,15 @@ namespace WaterAndPower.UserControls
         {
             if (cmbSearchType.Text == "Contractor Id")
             {
-                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_id = '" + txtSearch.Text + "' AND where user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
+                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_id = '" + txtSearch.Text + "' AND user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
             }
             else if (cmbSearchType.Text == "Name")
             {
-                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_name like '%" + txtSearch.Text + "%' AND where user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
+                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_name like '%" + txtSearch.Text + "%' AND user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
             }
             else if (cmbSearchType.Text == "Address")
             {
-                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_address like '%" + txtSearch.Text + "%' AND where user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
+                ds.fillgridView("select contractor_id as `Contractor ID`,contractor_name as `Contractor Name`,contractor_address as `Contractor Address`,date_added as `Date Added` from contractor_tbl where contractor_address like '%" + txtSearch.Text + "%' AND user_id = '"+ Helper.UserData[0]+"'", dataGridView1);
             }
             else
             {

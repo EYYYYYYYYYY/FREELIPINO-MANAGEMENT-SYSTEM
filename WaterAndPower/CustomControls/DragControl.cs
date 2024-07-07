@@ -21,7 +21,6 @@ namespace DragControlDemo
             set
             {
                 this.handleControl = value;
-                this.handleControl.MouseDown += new MouseEventHandler(this.DragForm_MouseDown);
             }
         }
         [DllImport("user32.dll")]

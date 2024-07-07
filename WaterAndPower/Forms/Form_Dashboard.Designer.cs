@@ -33,10 +33,7 @@
             this.panelLeft = new System.Windows.Forms.Panel();
             this.btnAboutUs = new System.Windows.Forms.Button();
             this.panelSide = new System.Windows.Forms.Panel();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnReports = new System.Windows.Forms.Button();
             this.btnWorks = new System.Windows.Forms.Button();
-            this.btnAnalytics = new System.Windows.Forms.Button();
             this.btnContractors = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -67,10 +64,7 @@
             this.panelLeft.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelLeft.Controls.Add(this.btnAboutUs);
             this.panelLeft.Controls.Add(this.panelSide);
-            this.panelLeft.Controls.Add(this.btnSettings);
-            this.panelLeft.Controls.Add(this.btnReports);
             this.panelLeft.Controls.Add(this.btnWorks);
-            this.panelLeft.Controls.Add(this.btnAnalytics);
             this.panelLeft.Controls.Add(this.btnContractors);
             this.panelLeft.Controls.Add(this.btnDashboard);
             this.panelLeft.Controls.Add(this.panel2);
@@ -102,40 +96,6 @@
             this.panelSide.Size = new System.Drawing.Size(8, 44);
             this.panelSide.TabIndex = 2;
             // 
-            // btnSettings
-            // 
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(12, 408);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(209, 44);
-            this.btnSettings.TabIndex = 1;
-            this.btnSettings.Text = "     Settings";
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.BtnSettings_Click);
-            // 
-            // btnReports
-            // 
-            this.btnReports.FlatAppearance.BorderSize = 0;
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
-            this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(12, 358);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(209, 44);
-            this.btnReports.TabIndex = 1;
-            this.btnReports.Text = "     Reports";
-            this.btnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReports.UseVisualStyleBackColor = true;
-            this.btnReports.Click += new System.EventHandler(this.BtnReports_Click);
-            // 
             // btnWorks
             // 
             this.btnWorks.FlatAppearance.BorderSize = 0;
@@ -152,23 +112,6 @@
             this.btnWorks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnWorks.UseVisualStyleBackColor = true;
             this.btnWorks.Click += new System.EventHandler(this.BtnWorks_Click);
-            // 
-            // btnAnalytics
-            // 
-            this.btnAnalytics.FlatAppearance.BorderSize = 0;
-            this.btnAnalytics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnalytics.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnalytics.ForeColor = System.Drawing.Color.White;
-            this.btnAnalytics.Image = ((System.Drawing.Image)(resources.GetObject("btnAnalytics.Image")));
-            this.btnAnalytics.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnalytics.Location = new System.Drawing.Point(12, 308);
-            this.btnAnalytics.Name = "btnAnalytics";
-            this.btnAnalytics.Size = new System.Drawing.Size(209, 44);
-            this.btnAnalytics.TabIndex = 1;
-            this.btnAnalytics.Text = "     Analytics";
-            this.btnAnalytics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAnalytics.UseVisualStyleBackColor = true;
-            this.btnAnalytics.Click += new System.EventHandler(this.BtnAnalytics_Click);
             // 
             // btnContractors
             // 
@@ -410,9 +353,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelSide;
-        private System.Windows.Forms.Button btnSettings;
-        private System.Windows.Forms.Button btnReports;
-        private System.Windows.Forms.Button btnAnalytics;
         private System.Windows.Forms.Button btnContractors;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panelContainer;

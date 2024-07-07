@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pharmonics19.DbFiles;
+using Pharmonics19._1.Helpers;
 
 namespace WaterAndPower.UserControls
 {
@@ -19,7 +20,7 @@ namespace WaterAndPower.UserControls
             InitializeComponent();
             ds = new DataAccess();
         }
-        string contractors, noOfJobs, AssignedJobs, completedJobs, WorkDoneAmt, workToBeDone, TotalPaid;
+        string contractors, noOfJobs, completedJobs, workToBeDone, TotalPaid;
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -33,20 +34,16 @@ namespace WaterAndPower.UserControls
 
         private void UC_Dashboard_Load(object sender, EventArgs e)
         {
-           contractors = ds.getSingleValueSingleColumn("select count(id) from tblContractors",out contractors,0);
-           noOfJobs = ds.getSingleValueSingleColumn("select count(id) from tblWorks",out noOfJobs,0);
-           AssignedJobs = ds.getSingleValueSingleColumn("select count(id) from tblWorkAssigned",out AssignedJobs,0);
-           completedJobs = ds.getSingleValueSingleColumn("select count(id) from tblWorkAssigned where isCompleted = 1", out completedJobs,0);
-
-           WorkDoneAmt = ds.getSingleValueSingleColumn("select sum(WorkDone) from tblCalculations", out WorkDoneAmt,0);
-           workToBeDone = ds.getSingleValueSingleColumn("select sum(WorkToBeDone) from tblCalculations", out workToBeDone,0);
-            TotalPaid = ds.getSingleValueSingleColumn("select sum(AmountPaid) from tblCalculations", out TotalPaid, 0);
+           contractors = ds.getSingleValueSingleColumn("select count(contractor_id) from contractor_tbl where user_id = '"+ Helper.UserData[0] + "'",out contractors,0);
+           noOfJobs = ds.getSingleValueSingleColumn("select count(work_id) from work_tbl where user_id = '"+ Helper.UserData[0] + "'", out noOfJobs,0);
+           completedJobs = ds.getSingleValueSingleColumn("select count(work_id) from work_tbl where status = 'Completed' AND user_id = '"+ Helper.UserData[0] + "'", out completedJobs,0);
+           workToBeDone = ds.getSingleValueSingleColumn("select count(work_id) from work_tbl where status = 'In Progress' AND user_id = '"+ Helper.UserData[0] + "'", out workToBeDone,0);
+           TotalPaid = ds.getSingleValueSingleColumn("select sum(work_fee) from work_tbl where status = 'Completed' AND user_id = '"+ Helper.UserData[0] + "'", out TotalPaid, 0);
 
 
             lblContractors.Text = contractors;
             lblJobs.Text = noOfJobs;
             blCompletedJobs.Text = completedJobs;
-            blWorkDone.Text = WorkDoneAmt;
             blWorkToBeDone.Text = workToBeDone;
             lblTotalPaid.Text = TotalPaid;
 

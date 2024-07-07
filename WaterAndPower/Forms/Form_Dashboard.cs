@@ -112,31 +112,6 @@ namespace WaterAndPower.Forms
             addControls(ab);
         }
 
-        private void BtnAnalytics_Click(object sender, EventArgs e)
-        {
-            lblTitle.Text = "Analytics";
-            slidePanel(btnAnalytics);
-            UC_Analytics anl = new UC_Analytics();
-            addControls(anl);
-          
-        }
-
-        private void BtnReports_Click(object sender, EventArgs e)
-        {
-            lblTitle.Text = "Reports";
-            slidePanel(btnReports);
-            UC_Reports anl = new UC_Reports();
-            addControls(anl);
-        }
-
-        private void BtnSettings_Click(object sender, EventArgs e)
-        {
-            lblTitle.Text = "Settings";
-            slidePanel(btnSettings);
-            UC_Settings anl = new UC_Settings();
-            addControls(anl);
-        }
-
         private void Form_Dashboard_Load(object sender, EventArgs e)
         {
             lblUserName.Text = Helper.UserData[1];

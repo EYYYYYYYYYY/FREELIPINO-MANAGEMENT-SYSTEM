@@ -101,7 +101,7 @@
             this.txtMBNo.Location = new System.Drawing.Point(175, 203);
             this.txtMBNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtMBNo.Name = "txtMBNo";
-            this.txtMBNo.Size = new System.Drawing.Size(246, 41);
+            this.txtMBNo.Size = new System.Drawing.Size(246, 112);
             this.txtMBNo.TabIndex = 109;
             this.txtMBNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtMBNo.OnValueChanged += new System.EventHandler(this.txtMBNo_OnValueChanged);
@@ -117,7 +117,7 @@
             this.txtTsAmount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTsAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTsAmount.isPassword = false;
-            this.txtTsAmount.Location = new System.Drawing.Point(175, 257);
+            this.txtTsAmount.Location = new System.Drawing.Point(509, 160);
             this.txtTsAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtTsAmount.Name = "txtTsAmount";
             this.txtTsAmount.Size = new System.Drawing.Size(246, 35);
@@ -131,7 +131,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(87, 257);
+            this.label3.Location = new System.Drawing.Point(421, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 18);
             this.label3.TabIndex = 119;
@@ -152,7 +152,7 @@
             this.txtTsNo.Location = new System.Drawing.Point(175, 160);
             this.txtTsNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTsNo.Name = "txtTsNo";
-            this.txtTsNo.Size = new System.Drawing.Size(249, 35);
+            this.txtTsNo.Size = new System.Drawing.Size(167, 35);
             this.txtTsNo.TabIndex = 107;
             this.txtTsNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtTsNo.OnValueChanged += new System.EventHandler(this.txtTsNo_OnValueChanged);
@@ -197,7 +197,7 @@
             this.txtTitle.Location = new System.Drawing.Point(175, 117);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(4);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(551, 35);
+            this.txtTitle.Size = new System.Drawing.Size(580, 35);
             this.txtTitle.TabIndex = 106;
             this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtTitle.OnValueChanged += new System.EventHandler(this.txtTitle_OnValueChanged);
@@ -295,7 +295,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(217, 310);
+            this.checkBox1.Location = new System.Drawing.Point(509, 213);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(117, 22);
             this.checkBox1.TabIndex = 123;

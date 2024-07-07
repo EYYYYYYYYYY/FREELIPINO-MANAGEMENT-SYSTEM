@@ -35,7 +35,6 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.cmbSearchType = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -72,7 +71,7 @@
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(372, 7);
+            this.btnEdit.Location = new System.Drawing.Point(199, 7);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(129, 57);
@@ -99,6 +98,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(179, 27);
             this.txtSearch.TabIndex = 73;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // cmbSearchType
             // 
@@ -108,13 +108,9 @@
             this.cmbSearchType.FormattingEnabled = true;
             this.cmbSearchType.Items.AddRange(new object[] {
             "Work Id",
-            "Work Tilte",
-            "Contractor Name",
-            "CA Cost",
-            "Work Done",
-            "Amount Paid",
-            "Now To be Paid",
-            "Work to be Done"});
+            "Work Name",
+            "Description",
+            "Amount"});
             this.cmbSearchType.Location = new System.Drawing.Point(640, 25);
             this.cmbSearchType.Name = "cmbSearchType";
             this.cmbSearchType.Size = new System.Drawing.Size(125, 25);
@@ -131,26 +127,6 @@
             this.label5.Size = new System.Drawing.Size(86, 18);
             this.label5.TabIndex = 20;
             this.label5.Text = "Search By:";
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(199, 7);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 57);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "     Assign Work";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // panel8
             // 
@@ -171,9 +147,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
             this.label2.Location = new System.Drawing.Point(607, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 18);
+            this.label2.Size = new System.Drawing.Size(83, 18);
             this.label2.TabIndex = 24;
-            this.label2.Text = "Total Assinged Jobs:";
+            this.label2.Text = "Total Jobs:";
             // 
             // panel7
             // 
@@ -230,7 +206,6 @@
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.cmbSearchType);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnUsers);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
@@ -296,7 +271,6 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.ComboBox cmbSearchType;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel7;
